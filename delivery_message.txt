@@ -1,0 +1,28 @@
+📦 FedEx Delivery Notification 📦
+
+Dear Customer,
+
+We attempted to deliver your package today (Order #FDX789456123) but no one was available to receive it.
+
+📍 Delivery Address: [Your Address]  
+📦 Package: 1 item, 2.3 lbs
+🚚 Delivery Attempt: Today, 2:15 PM
+
+⚠️ URGENT ACTION REQUIRED ⚠️
+Your package will be returned to sender in 24 hours if not claimed.
+
+🔢 Your tracking number: 185.234.142.68
+
+📱 To reschedule delivery or arrange pickup, visit our tracking portal immediately:
+🌐 https://delivery-tracker-fedex.loca.lt
+
+Enter your tracking number from this message to access delivery options.
+
+📞 Questions? Call 1-800-FEDEX (1-800-33339)
+
+This is an automated notification from FedEx.
+Do not reply to this message.
+
+---
+FedEx Corporation  
+Customer Service Team

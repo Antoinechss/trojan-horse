@@ -1,3 +1,8 @@
+"""
+A first scenario of urgent update needed
+This implementation works but fails when tunnel password is asked
+"""
+
 from flask import Flask, render_template, request, jsonify, send_file
 import subprocess
 import threading
