@@ -1,2 +1,2 @@
-HOST = "192.168.2.1"  # Hotspot IP gateway 
+HOST = "172.20.10.6"
 PORT = 4444
